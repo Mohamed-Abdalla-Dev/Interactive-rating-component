@@ -17,7 +17,7 @@ A simple interactive rating component where users can select a rating and submit
 
 - HTML  
 - CSS  
-- JavaScript  
+- JavaScript (vanilla) 
 
 ## 📌 Goal
 
@@ -25,4 +25,4 @@ Practice DOM manipulation, event handling, dynamic UI states, and interactive us
 
 ## 🌐 Live Demo
 
-👉 ()
+👉 (https://mohamed-abdalla-dev.github.io/Interactive-rating-component/)
