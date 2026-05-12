@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+}
+:root {
+  --White: hsl(0, 100%, 100%);
+  --Grey-500: hsl(217, 12%, 63%);
+  --Grey-700: hsl(217, 19%, 24%);
+  --Grey-900: hsl(213, 19%, 18%);
+  --Grey-950: hsl(216, 12%, 8%);
+  --Orange-500: hsl(25, 97%, 53%);
+}
+.container {
+  padding: 30px;
+  width: 90%;
+  max-width: 360px;
+  background-color: var(--Grey-900);
+  border-radius: 15px;
+}
+.container .icon {
+  padding: 10px;
+  border-radius: 50%;
+  width: fit-content;
+  background-color: var(--Grey-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .text h2 {
+  color: var(--White);
+  margin: 20px 0 10px;
+}
+.container .text p {
+  color: var(--Grey-500);
+  font-size: 15px;
+}
+.container .numbers {
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.numbers .info {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  background-color: var(--Grey-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.numbers .info:hover {
+  background-color: var(--Orange-500);
+  span {
+    color: var(--Grey-950);
+  }
+}
+.numbers .info span {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 5px;
+  color: var(--Grey-500);
+}
+.numbers .info.active {
+  background-color: var(--White);
+  span {
+    color: var(--Grey-950);
+  }
+}
+.container button {
+  background-color: var(--Orange-500);
+  color: var(--Grey-950);
+  font-weight: 700;
+  width: 100%;
+  padding: 15px 10px;
+  cursor: no-drop;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.container button.active {
+  cursor: pointer;
+  background-color: var(--White);
+}
+.container button:hover {
+  transform: translatey(-5px);
+}
+.container button:active {
+  transform: translatey(0);
+}
+/* thank-you-state */
+.thank-state {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+.thank-state .info {
+  text-align: center;
+}
+.thank-state .info p {
+  font-size: 14px;
+  color: var(--Orange-500);
+  background-color: var(--Grey-700);
+  padding: 5px 10px;
+  width: fit-content;
+  margin: 25px auto;
+  border-radius: 20px;
+}
+.thank-state .text {
+  text-align: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

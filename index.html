@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="rating-state">
+        <div class="icon">
+          <img src="./images/icon-star.svg" alt="" />
+        </div>
+        <div class="text">
+          <h2>How did we do?</h2>
+          <p>
+            How did we do? Please let us know how we did with your support
+            request. All feedback is appreciated to help us improve our
+            offering!
+          </p>
+        </div>
+        <div class="numbers">
+          <div class="info" data-value="1">
+            <span>1</span>
+          </div>
+          <div class="info" data-value="2">
+            <span>2</span>
+          </div>
+          <div class="info" data-value="3">
+            <span>3</span>
+          </div>
+          <div class="info" data-value="4">
+            <span>4</span>
+          </div>
+          <div class="info" data-value="5">
+            <span>5</span>
+          </div>
+        </div>
+        <button>submit</button>
+      </div>
+      <div class="thank-state">
+        <div class="info">
+          <img src="./images/illustration-thank-you.svg" alt="" />
+          <p>You selected <span class="result">4</span> out of 5</p>
+        </div>
+        <div class="text">
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
